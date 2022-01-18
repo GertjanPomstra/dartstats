@@ -1,0 +1,520 @@
+body {
+  background-color: aqua;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  background-color: #900000;
+  padding: 10px 10px 10px 20px;
+  margin: 20px;
+  border-radius: 40px;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+}
+
+p {
+  font-weight: bold;
+}
+
+th {
+  background-color: slategrey;
+  padding: 0 10px 0 10px;
+  border-radius: 10px;
+}
+
+td{
+  padding: 0 10px 0 10px;
+}
+
+.center {
+  margin-left: auto
+}
+
+.header {
+  background-color: #008000;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 80px;
+}
+
+.navigation {
+  background-color: darkturquoise;
+  padding: 10px;
+  margin: 10px;
+}
+
+.body {
+  background-color: darkturquoise;
+  padding: 10px;
+  margin: 10px;
+}
+
+button.navButton {
+  background-color: #900000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-weight: 600;
+  height: 30px;
+  margin-right: 10px;
+}
+
+button.gameButton {
+  background-color: #008000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-weight: 600;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.hitButton {
+  background-image: url("/public/bullseye.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110px;
+  background-position: 0px 1px;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.misButton {
+  background-image: url("/public/cross.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.undoButton {
+  background-image: url("/public/reverse.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110px;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.resetButton {
+  background-image: url("/public/previous.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110px;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.submitButton {
+  background-image: url("/public/submit.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110px;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.singleB {
+  background-image: url("/public/singleBlack.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.singleW {
+  background-image: url("/public/singleWhite.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.doubleR {
+  background-image: url("/public/doubleRed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.doubleG {
+  background-image: url("/public/doubleGreen.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.tripleR {
+  background-image: url("/public/tripleRed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.tripleG {
+  background-image: url("/public/tripleGreen.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d1 {
+  background-image: url("/public/doubles/D1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d2 {
+  background-image: url("/public/doubles/D2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d3 {
+  background-image: url("/public/doubles/D3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d4 {
+  background-image: url("/public/doubles/D4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d5 {
+  background-image: url("/public/doubles/D5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d6 {
+  background-image: url("/public/doubles/D6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d7 {
+  background-image: url("/public/doubles/D7.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d8 {
+  background-image: url("/public/doubles/D8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d9 {
+  background-image: url("/public/doubles/D9.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d10 {
+  background-image: url("/public/doubles/D10.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d11 {
+  background-image: url("/public/doubles/D11.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d12 {
+  background-image: url("/public/doubles/D12.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d13 {
+  background-image: url("/public/doubles/D13.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d14 {
+  background-image: url("/public/doubles/D14.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d15 {
+  background-image: url("/public/doubles/D15.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d16 {
+  background-image: url("/public/doubles/D16.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d17 {
+  background-image: url("/public/doubles/D17.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d18 {
+  background-image: url("/public/doubles/D18.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d19 {
+  background-image: url("/public/doubles/D19.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.d20 {
+  background-image: url("/public/doubles/D20.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
+.db {
+  background-image: url("/public/doubles/DB.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
