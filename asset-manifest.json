@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/dartstats/static/css/main.ef2c796c.css",
-    "main.js": "/dartstats/static/js/main.2d79dadb.js",
+    "main.css": "/dartstats/static/css/main.3f502ed0.css",
+    "main.js": "/dartstats/static/js/main.5620dc7c.js",
     "static/js/787.fcf7be6a.chunk.js": "/dartstats/static/js/787.fcf7be6a.chunk.js",
     "static/media/bullseye.png": "/dartstats/static/media/bullseye.76fa2ac7954e64b35376.png",
+    "static/media/submitscore.png": "/dartstats/static/media/submitscore.86cb6725df408e769eb7.png",
+    "static/media/start.png": "/dartstats/static/media/start.2b65f1ec115d9e439853.png",
     "static/media/cross.png": "/dartstats/static/media/cross.589edf348661feacbb6e.png",
     "static/media/singleWhite.png": "/dartstats/static/media/singleWhite.1e2e7f1ae8a12e92c087.png",
     "static/media/DB.png": "/dartstats/static/media/DB.cf7940e6fd0f32fa43c0.png",
@@ -34,12 +36,12 @@
     "static/media/singleBlack.png": "/dartstats/static/media/singleBlack.b88f0521c7d172622329.png",
     "static/media/previous.jpg": "/dartstats/static/media/previous.b0a3d07feb323f5bd448.jpg",
     "index.html": "/dartstats/index.html",
-    "main.ef2c796c.css.map": "/dartstats/static/css/main.ef2c796c.css.map",
-    "main.2d79dadb.js.map": "/dartstats/static/js/main.2d79dadb.js.map",
+    "main.3f502ed0.css.map": "/dartstats/static/css/main.3f502ed0.css.map",
+    "main.5620dc7c.js.map": "/dartstats/static/js/main.5620dc7c.js.map",
     "787.fcf7be6a.chunk.js.map": "/dartstats/static/js/787.fcf7be6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef2c796c.css",
-    "static/js/main.2d79dadb.js"
+    "static/css/main.3f502ed0.css",
+    "static/js/main.5620dc7c.js"
   ]
 }
