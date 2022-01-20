@@ -31,6 +31,17 @@ const Body: React.FC<Props> = ({navOption, gameOption}) => {
                     A short description of each game is shown below.
                     <p>Around the Clock</p>
                     The goal of Around the Clock is to hit every segment of the board in the least number of throws possible. You can make this practice routine harder by only allowing the singles or the inner or outer part of the single. You can also choose to hit doubles or triples.
+                    Around the Clock can be played in three variants. Standard, lives and tries.
+                    <br></br>
+                    <br></br>
+                    <b>Lives-variant</b>
+                    <br></br>
+                    With the lives-variant, you can set a number of lives. The goal is to hit every segment within a number of throws equal to the set number of lives. When this the segment within this number of throws, you proceed to the next segment. Otherwise you fall back to the previous segment. After both cases, your lives will reset. You can't go further down then the first segment and your lives can become zero and then negative, indecating this situation.
+                    <br></br>
+                    <br></br>
+                    <b>Tries-variant</b>
+                    <br></br>
+                    With the tries-variant, you can set a number of tries for each segment. The goal is get as many hits as possible within the number of tries. It does not matter if you don't hit it or if you hit it multiple times, you will proceed to the next segment after the set number of tries. 
                     <p>JDC Challenge</p>
                     The goal of the JDC Challenge is to get the highest amount of points possible. You get three throws for each segment in the segment sections and one throw per double in the doubles section.
                     In the segment sections, points are earned by hitting the right section. The number of the segment determines the amount of points. A double doubles that amount and a triple triples it. For example, when you need to throw 10's and you throw a single 10, a single 15 and a triple 10, you score 10 + 0 + 30 = 40 points. If you manage to throw a single, a double and a triple within one segment (that is called a shanghai), you get 100 bonus points.

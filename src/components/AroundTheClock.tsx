@@ -154,6 +154,17 @@ const AroundTheClock: React.FC<Props> = ({atcGameList, setAtcGameList}) => {
             return (
                 <div>
                     The goal of Around the Clock is to hit every segment of the board in the least number of throws possible. You can make this practice routine harder by only allowing the singles or the inner or outer part of the single. You can also choose to hit doubles or triples.
+                    Around the Clock can be played in three variants. Standard, lives and tries.
+                    <br></br>
+                    <br></br>
+                    <b>Lives-variant</b>
+                    <br></br>
+                    With the lives-variant, you can set a number of lives. The goal is to hit every segment within a number of throws equal to the set number of lives. When this the segment within this number of throws, you proceed to the next segment. Otherwise you fall back to the previous segment. After both cases, your lives will reset. You can't go further down then the first segment and your lives can become zero and then negative, indecating this situation.
+                    <br></br>
+                    <br></br>
+                    <b>Tries-variant</b>
+                    <br></br>
+                    With the tries-variant, you can set a number of tries for each segment. The goal is get as many hits as possible within the number of tries. It does not matter if you don't hit it or if you hit it multiple times, you will proceed to the next segment after the set number of tries. 
                     <br></br>
                     <br></br>
                     <select onChange={(e) => {
@@ -174,6 +185,17 @@ const AroundTheClock: React.FC<Props> = ({atcGameList, setAtcGameList}) => {
             return (
                 <div>
                     The goal of Around the Clock is to hit every segment of the board in the least number of throws possible. You can make this practice routine harder by only allowing the singles or the inner or outer part of the single. You can also choose to hit doubles or triples.
+                    Around the Clock can be played in three variants. Standard, lives and tries.
+                    <br></br>
+                    <br></br>
+                    <b>Lives-variant</b>
+                    <br></br>
+                    With the lives-variant, you can set a number of lives. The goal is to hit every segment within a number of throws equal to the set number of lives. When this the segment within this number of throws, you proceed to the next segment. Otherwise you fall back to the previous segment. After both cases, your lives will reset. You can't go further down then the first segment and your lives can become zero and then negative, indecating this situation.
+                    <br></br>
+                    <br></br>
+                    <b>Tries-variant</b>
+                    <br></br>
+                    With the tries-variant, you can set a number of tries for each segment. The goal is get as many hits as possible within the number of tries. It does not matter if you don't hit it or if you hit it multiple times, you will proceed to the next segment after the set number of tries. 
                     <br></br>
                     <br></br>
                     <select onChange={(e) => {
@@ -185,7 +207,7 @@ const AroundTheClock: React.FC<Props> = ({atcGameList, setAtcGameList}) => {
                         <option value={typeArr[1]}>{typeArr[1]}</option>
                         <option value={typeArr[2]}>{typeArr[2]}</option>
                     </select>
-                    <input type='number' min={1} max={9} onChange={(e) => {
+                    <input type='number' value={gameLives} min={1} max={9} onChange={(e) => {
                         let changeLives = parseInt(e.target.value)
                         setGameLives(changeLives)
                     }}></input>

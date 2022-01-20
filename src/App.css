@@ -28,6 +28,10 @@ td{
   padding: 0 10px 0 10px;
 }
 
+select {
+  height: 22px;
+}
+
 .center {
   margin-left: auto
 }
