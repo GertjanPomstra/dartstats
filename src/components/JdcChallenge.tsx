@@ -154,6 +154,7 @@ interface Props {
 }
 
 const JdcChallenge: React.FC<Props> = ({jdcGameList, setJdcGameList}) => {
+    const [startGame, setStartGame] = useState(-1)
     const [count, setCount] = useState(1)
     const [score, setScore] = useState(0)
     const [newJdcGame, setNewJdcGame] = useState({
@@ -732,6 +733,15 @@ const JdcChallenge: React.FC<Props> = ({jdcGameList, setJdcGameList}) => {
     }
 
     switch (-1) {
+        case startGame: return (
+            <div>
+                The goal of the JDC Challenge is to get the highest amount of points possible. You get three throws for each segment in the segment sections and one throw per double in the doubles section.
+                In the segment sections, points are earned by hitting the right section. The number of the segment determines the amount of points. A double doubles that amount and a triple triples it. For example, when you need to throw 10's and you throw a single 10, a single 15 and a triple 10, you score 10 + 0 + 30 = 40 points. If you manage to throw a single, a double and a triple within one segment (that is called a shanghai), you get 100 bonus points.
+                In the doubles section, you get one dart per double, starting with the double 1 and ending with the bullseye. For each hit you get 50 points, except for the bullseye, which give 100 points.
+                <br></br>
+                <button className="startButton" onClick={() => setStartGame(0)}></button>
+            </div>
+        )
         case newJdcGame.a10: return (
             <div>
                 <p>Hit segment 10.</p>
@@ -1165,6 +1175,7 @@ const JdcChallenge: React.FC<Props> = ({jdcGameList, setJdcGameList}) => {
                         b19: -1,
                         b20: -1
                     })
+                    setStartGame(-1)
                 }}
                 ></button>
             </div>

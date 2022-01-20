@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import '../App.css';
+import X01, {IState as IX01State} from "./X01";
 import AroundTheClock, {IState as IAtcState} from "./AroundTheClock";
 import JdcChallenge, {IState as IJdcState} from "./JdcChallenge";
 import AtcStats from './AtcStats';
@@ -14,6 +15,7 @@ const Body: React.FC<Props> = ({navOption, gameOption}) => {
     
     const [atcGameList, setAtcGameList] = useState<IAtcState['atcGameList']>([])
     const [jdcGameList, setJdcGameList] = useState<IJdcState['jdcGameList']>([])
+    const [x01GameList, setX01GameList] = useState<IX01State['x01GameList']>([])
 
     switch(navOption){
         case 0: {
@@ -49,12 +51,20 @@ const Body: React.FC<Props> = ({navOption, gameOption}) => {
                 case 1: {
                     return (
                         <div className="body">
+                            <h2>X01</h2>
+                            <X01 x01GameList={x01GameList} setX01GameList={setX01GameList}/>
+                        </div>
+                    )
+                }
+                case 2: {
+                    return (
+                        <div className="body">
                             <h2>Around the Clock</h2>
                             <AroundTheClock atcGameList={atcGameList} setAtcGameList={setAtcGameList}/>
                         </div>
                     )
                 }
-                case 2: {
+                case 3: {
                     return (
                         <div className="body">
                             <h2>JDC Challenge</h2>
@@ -85,12 +95,21 @@ const Body: React.FC<Props> = ({navOption, gameOption}) => {
                 case 1: {
                     return (
                         <div className="body">
+                            <h2>X01 statistics</h2>
+                            {/* <X01Stats x01GameList={x01GameList}/> */}
+                            Not yet here.
+                        </div>
+                    )
+                }
+                case 2: {
+                    return (
+                        <div className="body">
                             <h2>Around the Clock statistics</h2>
                             <AtcStats atcGameList={atcGameList}/>
                         </div>
                     )
                 }
-                case 2: {
+                case 3: {
                     return (
                         <div className="body">
                             <h2>JDC Challenge statistics</h2>

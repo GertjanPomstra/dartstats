@@ -70,6 +70,20 @@ button.gameButton {
   margin-top: 10px;
 }
 
+.startButton {
+  background-image: url("/public/start.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 186%;
+  border: 5px;
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px 0 0;
+}
+
 .hitButton {
   background-image: url("/public/bullseye.png");
   background-repeat: no-repeat;
@@ -128,10 +142,10 @@ button.gameButton {
 }
 
 .submitButton {
-  background-image: url("/public/submit.png");
+  background-image: url("/public/submitscore.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 110px;
+  background-size: 186%;
   border: 5px;
   border-color: gray;
   border-style: outset;
